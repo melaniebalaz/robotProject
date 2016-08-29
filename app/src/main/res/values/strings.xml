@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RobotController</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Placeholder">Enter IP Address of Web Server here</string>
+</resources>
