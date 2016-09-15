@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true">
 
         <Button
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:text="FORWARD"
             android:id="@+id/forwardButton"
@@ -24,25 +24,38 @@
             android:onClick="forwardMove" />
 
         <Button
-            android:layout_width="140dp"
-            android:layout_height="150dp"
-            android:text="RIGHT"
-            android:id="@+id/rightButton"
-            android:layout_gravity="right|center_vertical" />
-
-        <Button
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:text="LEFT"
             android:id="@+id/leftButton"
-            android:layout_gravity="left|center_vertical" />
+            android:layout_gravity="left|top"
+            android:onClick="leftMove"
+            android:clickable="true" />
 
         <Button
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="RIGHT"
+            android:id="@+id/rightButton"
+            android:layout_gravity="right|top"
+            android:clickable="true"
+            android:onClick="rightMove" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="STOP"
+            android:id="@+id/stopButton"
+            android:layout_gravity="left|center_vertical"
+            android:clickable="true"
+            android:onClick="stopRobot" />
+
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:text="BACK"
             android:id="@+id/backButton"
-            android:layout_gravity="center_horizontal|bottom"
+            android:layout_gravity="center"
             android:onClick="backwardMove"
             android:clickable="true" />
 

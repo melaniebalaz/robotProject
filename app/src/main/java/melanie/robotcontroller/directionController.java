@@ -15,6 +15,7 @@ public class directionController extends AppCompatActivity {
 
 
     protected String serverIPAdress;
+    protected String direction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,15 +28,30 @@ public class directionController extends AppCompatActivity {
 
     public void forwardMove(View view) {
 
-        String direction;
         direction = "forward";
         createNewServerRequest(direction);
     }
 
     public void backwardMove(View view) {
 
+        direction = "backward";
+        createNewServerRequest(direction);
 
+    }
 
+    public void stopRobot(View view) {
+        direction = "stop";
+        createNewServerRequest(direction);
+    }
+
+    public void rightMove(View view) {
+        direction = "right";
+        createNewServerRequest(direction);
+    }
+
+    public void leftMove(View view) {
+        direction = "left";
+        createNewServerRequest(direction);
     }
 
     private void createNewServerRequest(final String direction){
